@@ -1,16 +1,23 @@
-class Cat:
+class Pet:
     def __init__(self,name,age):
         self.name = name
-        self.age=age
+        self.age = age
     
-    def speak(self)
+    def show(self):
+        print(f"I am {self.name} and I am {self.age} years old.")
+
+class Cat(Pet):    
+    def speak(self):
         print("Meow")
 
 
-class Dog:
-    def __init__(self,name,age):
-        self.name = name
-        self.age=age
-    
-    def speak(self)
+class Dog(Pet):    
+    def speak(self):
         print("Bark")
+
+p = Pet("Tim",19)
+p.show()
+
+c = Cat("Abbey",5)
+c.speak()
+
