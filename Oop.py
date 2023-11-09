@@ -27,6 +27,9 @@ p.show()
 c = Cat("Abbey",5)
 c.speak()
 
+f = Fish("Goldy",1)
+f.speak()
+
 
 
 
